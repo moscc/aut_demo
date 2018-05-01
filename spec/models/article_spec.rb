@@ -7,8 +7,9 @@ RSpec.describe Article, type: :model do
   end
 
   describe 'Factory' do
-    it 'has a valid factory' do
+    it 'is valid' do
       expect(FactoryBot.create(:article)).to be_valid
     end
   end
-end  
+  
+end
