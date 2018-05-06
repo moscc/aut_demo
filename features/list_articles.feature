@@ -17,3 +17,4 @@ Feature: List articles on landing page
     And I should see "Learn Rails 5"
     And I should see "Build awesome rails applications"
     And I should see "by Faraz at 2018-05-06"
+    Then show me the page in the browser

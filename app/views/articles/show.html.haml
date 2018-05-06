@@ -1,0 +1,6 @@
+%h1= @article.title
+%p= @article.content
+
+= form_with url: comments_path(@article) do |form|
+  = form.text_area :body
+  = form.submit
