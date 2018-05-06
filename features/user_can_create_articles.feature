@@ -6,7 +6,6 @@ Feature: User can create articles
 Scenario: User can access a create article UI and successfully create an article
   Given I visit the site
   And I click on "Create Article"
-  Then show me the page in the browser
   And I fill in "Title" with "Article yo"
   And I fill in "Content" with "This is my content yo!"
   And I click on "Save"
