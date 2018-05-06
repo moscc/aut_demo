@@ -2,5 +2,8 @@
 %p= @article.content
 
 = form_with url: comments_path(@article) do |form|
+  = form.label :body
   = form.text_area :body
+  = form.label :email
+  = form.text_field :email
   = form.submit
