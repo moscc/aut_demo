@@ -17,4 +17,3 @@ Feature: List articles on landing page
     And I click on "Save Comment"
     Then I should see "Thank you for your feedback"
     And I should see "My comment yo!"
-    And I should see "Submitted by: mathias@mail.com"
