@@ -20,3 +20,11 @@ Scenario: System rejects articles without title
   And I fill in "Content" with "This is my content yo!"
   And I click on "Save"
   Then I should see "Title can't be blank"
+
+  Scenario: System rejects articles without content
+    Given I visit the site
+    And I click on "Create Article"
+    And I fill in "Title" with "Article yo"
+    And I fill in "Content" with ""
+    And I click on "Save"
+    Then I should see "Content can't be blank"
