@@ -14,8 +14,7 @@ Feature: List articles on landing page
     And I click on "A breaking news article"
     And I fill in "Body" with "My comment yo!"
     And I fill in "Email" with "mathias@mail.com"
-    Then show me the page in the browser
-    And I click on "Save Comment"
+    And I click on "Save"
     Then I should see "Thank you for your feedback"
     And I should see "My comment yo!"
     And I should see "Submitted by: mathias@mail.com"
