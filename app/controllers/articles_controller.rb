@@ -9,8 +9,13 @@ class ArticlesController < ApplicationController
 
   def create
     article = Article.create(article_params)
-    flash[:success] = 'Your article was successfully created'
-    redirect_to root_path
+    if article.persisted?
+      flash[:success] = 'Your article was successfully created'
+      redirect_to root_path
+    else
+      flash[:error] = article.errors.full_messages.first
+      render :new
+    end  
   end
 
   def show
