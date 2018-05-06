@@ -7,3 +7,7 @@
   = form.label :email
   = form.text_field :email
   = form.submit
+
+- if @article.comments.any?
+  - @article.comments.each do |comment|
+    %p= comment.body
